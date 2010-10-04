@@ -469,7 +469,8 @@ sub Test::Weaken::check_ignore {
         my $array_context = wantarray;
 
         my $before_weak =
-            ( ref $probe_ref eq 'REF' and Scalar::Util::isweak( ${$probe_ref} ) );
+            ( ref $probe_ref eq 'REF'
+                and Scalar::Util::isweak( ${$probe_ref} ) );
         my $before_dump =
             Data::Dumper->new( [$probe_ref], [qw(proberef)] )
             ->Maxdepth($compare_depth)->Dump();
@@ -496,7 +497,8 @@ sub Test::Weaken::check_ignore {
         }
 
         my $after_weak =
-            ( ref $probe_ref eq 'REF' and Scalar::Util::isweak( ${$probe_ref} ) );
+            ( ref $probe_ref eq 'REF'
+                and Scalar::Util::isweak( ${$probe_ref} ) );
         my $after_dump =
             Data::Dumper->new( [$probe_ref], [qw(proberef)] )
             ->Maxdepth($compare_depth)->Dump();
