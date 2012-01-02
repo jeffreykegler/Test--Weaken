@@ -1,3 +1,5 @@
+^MYMETA[.]json$
+^MYMETA[.]yml$
 ^Makefile$
 ^Test-Weaken-[0-9].[0-9]{3}_[0-9]{3}/
 ^Test-Weaken-[0-9].[0-9]{6}/

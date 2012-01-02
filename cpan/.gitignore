@@ -1,5 +1,7 @@
 save/
-Makefile
+/MYMETA[.]json
+/MYMETA[.]yml
+/Makefile
 blib/
 junk
 pm_to_blib
